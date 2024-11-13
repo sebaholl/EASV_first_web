@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Details</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Webpage</title>
 </head>
 <body>
+  <div class="container">
 
+    <nav class="navigation">
+      <div class="menu-container">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="subpage.html">Recipe</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="container">
-        <nav class="navigation">
-          <div class="menu-container">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="index.html">Recipe</a>
-                </li>
-                <li>
-                    <a href="own_page.html">About us</a>
-                </li>
-            </ul>
-          </div>
-        </nav>
-   
+    
+
+    <section class="recipe_details">
+      <div class="recipe_details_left">
+        <div class="recipe-hero-text">
+          <p class="recipe-hero-text-smallest color-primary">#1 Bender’s most shiny recipe</p>
+          <p class="recipe-hero-text-medium">Boozy brown</p>
+          <p class="recipe-hero-text-large">Lentil soup</p>
+        </div>
         
-        <main>
-            <section class="recipe-info">
-                <h2>#1 Bender's most shiny recipe</h2>
-                <h1 class="recipe-title">BOOZY BROWN <span>LENTIL SOUP</span></h1>
-                <div class="details">
-                    <div class="time">
-                        <i class="fa-solid fa-clock"></i> 20 minutes
-                    </div>
-                    <div class="calories">
-                        <i class="fa-solid fa-bolt"></i> 230 calories
-                    </div>
-                    <div class="difficulty">
-                        <i class="fa-solid fa-chart-line"></i> Beginner
-                    </div>
-                </div>
-                <div class="ingredients">
-                    <h3>Ingredience</h3>
-                    <ul>
-                      <li>
-                        <input type="checkbox" id="ingredient1">
-                        <label for="ingredient1"><i class="fa-regular fa-circle"></i> 200g of lentil</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="ingredient2">
-                        <label for="ingredient2"><i class="fa-regular fa-circle"></i> 2 cl dark brown ale</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="ingredient3">
-                        <label for="ingredient3"><i class="fa-regular fa-circle"></i> 1 can of tomatoes</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="ingredient4">
-                        <label for="ingredient4"><i class="fa-regular fa-circle"></i> 100g of chickpeas</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="ingredient5">
-                        <label for="ingredient5"><i class="fa-regular fa-circle"></i> 1 medium onion</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="ingredient6">
-                        <label for="ingredient6"><i class="fa-regular fa-circle"></i> 1 garlic</label>
-                      </li>
-                    </ul>
-                    <div class="actions">
-                      <button><i class="fa-solid fa-print"></i> Print</button>
-                      <button><i class="fa-solid fa-heart"></i> Favorite</button>
-                    </div>
-                  </div>
-                  
-            </section>
-            <section class="recipe-image">
-                <img src="https://s3-alpha-sig.figma.com/img/2ca5/1512/065ec45906eaa1f02310718987f6aa37?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kiF8elebDpNt66oi~QScZDBJypUy4jDUY5r86N1OwiL5TEPqWeOiocLjC0iIjef8pkre3oENFekZw087vKclOn2sxf3GNda2NWz8QR5~C3fvBvZsVfmJCIOxOPB9lREd4pkkciIHWcjZen7qG1umLE6kv-wO42B6kZwBc3E~TOmCG7orPkT7D1tQOzGYiM1qE84pExdzBujevNCMcXoIFbSByMFpmksDCz3y1SCBsskzWgEVtsUvwgzOyfBkzUbuXNd07VGh7U9ay44RrrtXd2rOzvfQI6nxsxmCzVakOV2SUBcI-8lmBlU-VBnw5dNxJR7KjmR~-cWFTxkiqnXIXA__" alt="Lentil Soup">
-            </section>
-        </main>
-    </div>
+        <!-- div element to contain 3 info, checkboxes and 2 buttons -->
+        <div class="recipe_details_ingredient_block">
 
+          <!-- Part I -->
+          <!-- div element .recipe_details_ingredient_block_info_three + .recipe_details_ingredient_block_info_three_item*3 with i+p as children -->
+          <div class="recipe_details_ingredient_block_info_three">
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-clock"></i>
+              <p>20 minutes</p>
+            </div>
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-fire"></i>
+              <p>200 calories</p>              
+            </div>
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-chart-simple"></i>
+              <p>Beginner</p>
+            </div>
+          </div>
+
+       
+          <div class="recipe_details_ingredients">
+            <!-- Part II -->
+            <!-- header (h4) + div element (.recipe_details_ingredient_block_checkboxes) & input fields-->
+            <h4>Ingredients</h4>
+            <div class="recipe_details_ingredient_block_checkboxes">
+              <label><input type="checkbox"> Lentil </label>
+              <label><input type="checkbox"> Chickpeas </label>
+              <label><input type="checkbox"> Brown Ale </label>
+              <label><input type="checkbox"> Onion </label>
+              <label><input type="checkbox"> Tomatoes </label>
+              <label><input type="checkbox"> Garlic </label>
+            </div>
+          </div>
+
+          <!-- Part III -->
+          <!-- div element .recipe_details_ingredient_block_buttons with 2 buttons and i + a as children -->
+          <div class="recipe_details_ingredient_block_buttons">
+            <button>
+              <i class="fas fa-print"></i>
+              <a href="">Print</a>
+            </button>
+            <button>
+              <i class="fas fa-heart"></i>
+              <a href="">Favorite</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- right side contains image -->
+      <div class="recipe_details_right">
+        <div class="recipe_details_right_image">
+          <img src="https://s3-alpha-sig.figma.com/img/2ca5/1512/065ec45906eaa1f02310718987f6aa37?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ketHsFu2ZU3rGpL9uNXbI6XNRuj~ogT47DaYAAEWdaAOEmFxHriA306HbcCWyvjbjiw~1ZEyOYJfI3QOEGjDTQFo9~lh4GQBoGuFB6lYK-lsT2eBqvoMaz1BGDCk837KY1F6pxE0mvrgEjCyjVFL2~SgeUAnlHuZZLKsvG07YIG0u2xzq4fCQbNLnP3k0ZCa9zRYtsoWRNQHGU3S16d35r2OffIhA3KfXZC0otZ6SrU0Q7H7YmqSoboIxHB9jkH3Dnt-x2dBn7pnvMAQ7GkJXPo8IS0Owk2xsy6YeNS84bjtzikwCotHQwoSYUvlD2GwBYGjt1Ol2tqTetU0IRIerA__" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- div element .recipe_instruction_one with .filler_block as child :: just to take up space for future ul>li -->
+    <section class="recipe_instruction_one">
+      <div class="filler_block"></div>
+    </section>
 
     <section class="instructions-section-again">
         <div class="recipe-container-again">
@@ -118,7 +133,7 @@
                     <p>Serve while hot. Leftovers will keep well for about 4 days in the refrigerator, or can be frozen for several months (just defrost before serving).</p>
                 </div>
             </div>
-    
+   
             <div class="ingredients-continue-again">
                 <h2>Ingredients</h2>
                 <ul>
@@ -141,12 +156,15 @@
                 </ul>
             </div>
         </div>
-    
+   
     </section>
-
-
-
-<section class="instructions-section">
+ 
+ 
+ 
+ 
+ 
+ 
+ <section class="instructions-section">
     <div class="recipe-container">
         <div class="instructions">
             <h2>Instructions</h2>
@@ -179,7 +197,8 @@
                 <p>Serve while hot. Leftovers will keep well for about 4 days in the refrigerator, or can be frozen for several months (just defrost before serving).</p>
             </div>
         </div>
-
+ 
+ 
         <div class="ingredients-continue">
             <h2>Ingredients</h2>
             <ul>
@@ -202,12 +221,16 @@
             </ul>
         </div>
     </div>
-
-</section>
-
-
-
-<footer>
+ 
+ 
+ </section>
+ 
+ 
+ 
+ 
+ 
+ 
+ <footer>
     <div class="footer-container">
         <div class="social-media">
             <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a><br>
@@ -225,11 +248,16 @@
              <p><i class="fa-solid fa-recycle"></i>Etsy is powered by 100% renewable electricity.</p>
         </div>
     </div>
-
-
-</footer>
-
-
-
-</body>
-</html>
+ 
+ 
+ 
+ 
+ </footer>
+ 
+ 
+ 
+ 
+ 
+ 
+ </body>
+ </html>

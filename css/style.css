@@ -760,7 +760,8 @@ footer {
   color: var(--background-color-light);
   padding: 20px 20px 5px 20px;
   background: rgb(78,78,78);
-  background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) )
+  background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) );
+  border-radius: 5px;
 }
 
 .recipe_details_ingredients h4 {
@@ -820,6 +821,10 @@ footer {
 .recipe_details_ingredient_block_buttons {
   display: flex;
   margin: 30px 0 0 0;
+}
+
+.recipe_details_ingredient_block_buttons button:hover {
+  background-color: var(--color_dark)
 }
 
 .recipe_details_ingredient_block_buttons button {
@@ -965,16 +970,6 @@ footer {
  .details i {
   color: var(--primary-color);
   margin-right: 8px;
-  font-size: 12px;
- }
- 
- 
- .ingredients {
-  background: rgb(78,78,78);
-  background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) 100%);
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
   font-size: 12px;
  }
  
@@ -1305,10 +1300,11 @@ footer {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 10px 20px;
+  padding: 50px 70px;
   border-radius: 5px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  font-size: 20px;
 }
 
 .hero-image:hover .overlay {

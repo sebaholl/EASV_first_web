@@ -1001,7 +1001,7 @@ footer {
  
  
  .ingredients li i {
-   color: var(--background-color-light);
+  color: var(--background-color-light);
   margin-right: 10px;
   font-size: 12px;
  }
@@ -1242,6 +1242,141 @@ footer {
   gap: 5px;
   color: var(--background-color-light);
  }
+
+
+
+ /* Third page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_third {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head1, .head2, .head3 {
+  color: #333;
+}
+
+.recipe-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-header, .head1 {
+  font-size: 2.5rem;
+  color: #543a3a;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #6d6d6d;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+.hero-image .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hero-image:hover .overlay {
+  opacity: 1;
+}
+
+.ingredients-sidebar {
+  position: sticky;
+  top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.ingredients-sidebar, .head2 {
+  color: #543a3a;
+}
+
+.ingredients-list_third {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions-section_third, .notes-section, .tips-section, .nutrition-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps_third .step_third {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 3px solid #543a3a;
+  animation: slideIn 1s ease;
+}
+
+.steps_third, .head3{
+  color: #543a3a;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.steps_third p {
+  margin-left: 15px;
+}
+
+.notes-section, .tips-section, .nutrition-section {
+  background-color: var(--background-color-light);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
 
 
  /* Default desktop styles go here above the media queries */

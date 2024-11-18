@@ -88,7 +88,7 @@ body {
 }
 
 .hero { /* Parent with 100% width*/
-  background-image: url('/EASV_images/lentil_soup.jpeg');
+  background-image: url('EASV_first_web/index.html/EASV_images/lentil_soup.jpeg');
   width:var(--width-full);
   height:auto;
   min-height:600px;

@@ -87,17 +87,7 @@ body {
   border-right: none;
 }
 
-.hero { /* Parent with 100% width*/
-  background-image: url('/EASV_images/lentil_soup.jpeg');
-  width:var(--width-full);
-  height:auto;
-  min-height:600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  margin-top:-40px;
-  color:var(--background-color-light);
-} 
+
 
 .hero-container {/* child to follow to 12 column */
   display:grid;

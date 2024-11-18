@@ -1307,6 +1307,13 @@ footer {
 
 
 @media (max-width: 768px) {
+
+  :root {
+
+   --width-12col: 100%;     
+
+  }
+
   .container {
     padding: 10px;
   }

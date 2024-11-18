@@ -33,15 +33,6 @@
    --category-pasta: #BF5B23;
 }
 
-
-
-
-/* media queries for a mobile version*/
-
-
-
-
-
 /* reset CSS */
 * {
   margin:0;
@@ -365,7 +356,6 @@ body {
     font-size: 12px;
  }
 
- /* Stylizace sekce "Category Selection" */
 .category-selection {
     text-align: center;
     margin: 50px 0;
@@ -387,7 +377,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Tabulka kategorií */
 .category-selection table {
     background-color: var(--background-color-light);
     padding: 20px;
@@ -396,7 +385,6 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Stylizace jednotlivých buněk v tabulce */
 .category-selection td {
     padding: 20px;
     font-size: 16px;
@@ -404,13 +392,11 @@ body {
     color: var(--color_dark);
 }
 
-/* Ikony v tabulce */
 .category-selection img {
     width: 50px;
     margin-bottom: 10px;
 }
 
-/* Centrování tabulky */
 .category-selection div {
     display: flex;
     justify-content: center;
@@ -428,7 +414,7 @@ td {
 }
 
 i {
-    font-size: 50px; /* Increases icon size */
+    font-size: 50px; 
 }
 
 tr {
@@ -445,18 +431,16 @@ tr {
 }
 
 
-/* Hero image section styles */
 .heroimage {
   width: 100%;
-  height: 600px; /* Adjust the height as needed */
-  background-image: url('/EASV_images/Cake.jpeg'); /* Replace with your desired image URL */
+  height: 600px; 
+  background-image: url('/EASV_images/Cake.jpeg'); 
   background-size: cover;
   background-position: center;
   position: relative;
   clip-path: polygon(0 16%, 100% 34%, 100% 100%, 0% 100%); 
 }
 
-/* Square box with text inside */
 .text-box {
   background-color: var(--color-light);
   width: 300px; 
@@ -473,7 +457,6 @@ tr {
   border-radius: 10px;
 }
 
-/* Large orange text */
 .hero-title {
   font-size: 28px; 
   color: var(--primary-color);
@@ -481,13 +464,11 @@ tr {
   font-weight: bold;
 }
 
-/* Smaller black text */
 .hero-subtext {
   font-size: 16px; 
   color: var(--background-color-navigation);
 }
 
-/* Reset some basic styles */
 * {
   margin: 0;
   padding: 0;
@@ -1000,10 +981,6 @@ footer {
  }
  
  
- 
- /* General styling */
- 
- 
  .recipe-container-again {
   display: flex;
   gap: 20px;
@@ -1131,8 +1108,8 @@ footer {
   font-size: 14px;
   color: var(--primary-color);
   font-weight: bold;
-  writing-mode: vertical-rl; /* Position step number vertically */
-  transform: rotate(180deg); /* Rotate to appear horizontally */
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg); 
   margin-right: 10px;
  }
  
@@ -1170,7 +1147,7 @@ footer {
  }
  
  
- /* Style the ingredients list */
+
  .ingredients ul {
   list-style-type: none;
   padding: 0;
@@ -1315,7 +1292,7 @@ footer {
 }
 
 
-/* Animations */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -1693,11 +1670,11 @@ footer {
 }
 
 
-/* Mobile Styles (for screens <= 768px) */
+
 @media (max-width: 768px) {
-  /* Hide footer paragraph */
+  
   .footer-info {
-    display: none !important; /* Force the paragraph to be hidden */
+    display: none !important; 
   }
 
 }
